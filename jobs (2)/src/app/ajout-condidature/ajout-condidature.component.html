@@ -1,0 +1,31 @@
+<nav class="docs-navbar-header">
+	<span style="color:red; font-weight: bold; padding-right: 50px;">ISTIC Jobs  </span> 
+	<a mat-button routerLink="/">Home</a>
+    <a mat-button routerLink="/postes" style="padding-right: 10px;">Offres d'emploi</a>
+	<a mat-button routerLink="/contact">About & Contact</a>
+
+	<a mat-button routerLink="/login"  style="color:rgb(139, 255, 139); font-weight: bold; padding-left: 50px;">Espace admin</a>
+</nav>
+
+<div class="login-container"  style="background-color: rgb(150, 231, 241)!important;">
+    <div class="login-content"   style="    background-image: url('https://agrinova.ma/wp-content/uploads/2020/01/Background-website-01.jpg')!important;
+    background-repeat: no-repeat;
+    background-size: 200%;height: 200px;padding-top: 30px;">
+      <mat-toolbar class="login-toolbar" color="primary">Offre d'emploi n°{{id}}</mat-toolbar>
+      <mat-card>
+        <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit($event)">
+          <mat-form-field>
+            <input autofocus type="text" matInput placeholder="email"  Name="email">
+          </mat-form-field>
+
+          <mat-form-field>
+            <textarea rows="4" cols="50"autocomplete="false" matInput placeholder="message" name="message">
+            </textarea>
+          </mat-form-field>
+
+          <button type="submit" mat-raised-button color="primary">Demande</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+ 

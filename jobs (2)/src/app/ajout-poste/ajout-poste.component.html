@@ -1,0 +1,35 @@
+
+
+<nav class="docs-navbar-header">
+	<span style="color:red; font-weight: bold; padding-right: 50px;">Welcome Admin</span> 
+    <a mat-button routerLink="/admin" style="padding-right: 10px;">liste des candidatures</a>
+	<a mat-button routerLink="/supprime_poste" style="padding-right: 10px;">liste des postes</a>
+	<a mat-button routerLink="/ajouter_postes" style="padding-right: 10px;">Ajouter une poste</a>
+</nav>
+
+
+<div class="login-container"  style="background-color: rgb(150, 231, 241)!important;">
+    <div class="login-content"   style="    background-image: url('https://agrinova.ma/wp-content/uploads/2020/01/Background-website-01.jpg')!important;
+    background-repeat: no-repeat;
+    background-size: 200%;height: 200px;padding-top: 30px;">
+      <mat-toolbar class="login-toolbar" color="primary">Ajouter une offre d'emploi</mat-toolbar>
+      <mat-card>
+        <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit($event)">
+            <mat-form-field>
+                <input  type="text"   placeholder="titre"  Name="titre">
+              </mat-form-field>
+              <mat-form-field>
+                <input  type="text"   placeholder="societe"  Name="societe">
+              </mat-form-field>
+              <mat-form-field>
+                <input  type="text"   placeholder="salaire"  Name="salaire">
+              </mat-form-field>
+            
+ 
+
+          <button type="submit" mat-raised-button color="primary">Ajouter poste</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+ 

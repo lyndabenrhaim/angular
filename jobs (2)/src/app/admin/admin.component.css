@@ -1,0 +1,23 @@
+.docs-navbar-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 16px;
+    background: #4285f4;
+    color:#fff;
+}
+:host{
+    background-image: url('https://agrinova.ma/wp-content/uploads/2020/01/Background-website-01.jpg')!important;
+    background-repeat: no-repeat;
+    background-size: 200%;    color:#fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
